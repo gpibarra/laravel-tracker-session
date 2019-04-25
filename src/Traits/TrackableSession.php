@@ -19,7 +19,7 @@ trait TrackableSession
     /**
      * Get the entity's last login at.
      */
-    public function lastLogin() :Model
+    public function lastLogin() :?Model
     {
         return $this->authentications()->first();
     }

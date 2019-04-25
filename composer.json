@@ -1,0 +1,29 @@
+{
+    "name": "gpibarra/laravel-tracker-session",
+    "description": "A Laravel Session Tracker",
+    "keywords": ["tracker", "tracking", "visitor", "sesion", "logging", "user agent", "mobile detection", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gerardo Ibarra",
+            "email": "ibarragp@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "gpibarra\\TrackerSession\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+               "gpibarra\\TrackerSession\\TrackerSessionServiceProvider"
+            ]
+        }
+    }
+}

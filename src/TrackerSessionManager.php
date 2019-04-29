@@ -10,7 +10,7 @@ use Illuminate\Support\Carbon;
 class TrackerSessionManager
 {
 
-    public static function get(Request $request=null, $user=null) :TrackerSession
+    public static function get(Request $request=null, $user=null) :?TrackerSession
     {
         if ($request==null) {
             $request = request();
